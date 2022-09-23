@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+
+/* colors */
+:root{
+    --primay : #1A253f;
+    --dark : #151A33;
+    --secondary : #2b55cc;
+    --info : #4d79f6;
+    --ternary : #848db3;
+    --pure : #eff2f9;
+    --fade : #7081bd;
+    --mild : #8997bd;
+    --footer : #212A4A;
+    --black : #060b1b;
+    --twitter : #4ac7ec;
+    --dribble : #ff5da0;
+    --success : #1ecab8;
+    --danger : #f1646c;
+    --dark-blue : #28365f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-sarif;
+    background: var(--dark);
+    --webkit-font-smoothing: antialiased;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    line-height: 1;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav{
+    background: var(--primay);
+    padding: 1.6rem 0;
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner .logo{
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.inner .logo i{
+    color: var(--info);
+}
+
+.inner button{
+    background:var(--secondary);
+    border: none;
+    padding: .06rem 1rem;
+    color: var(--pure);
+    font-size: 1rem;
+    border-radius: 0.5em;
+}
+
+.profile{
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+    padding-bottom: 4rem;
+}
+
+.profile .left{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.profile .right{
+    flex:1;
+}
+
+.profile .left h2{
+    color: var(--fade);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile .left p{
+    color: var(--mild);
+    font-size: 14px;
+}
+
+.profile .left img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatarblock{
+    position: relative;
+    margin-right: 2rem;
+
+}
+
+.profile .left .avatarblock span{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: var(--info);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure);
+    box-shadow: 0px 0px 20px 0px rgba(32, 31, 54, 0.05);
+    cursor: pointer;
+}
+
+.profile .right ul.contact{
+    list-style: none;
+    margin-bottom: 1.6rem;
+}
+
+.profile .right ul.contact li{
+    color: var(--ternary);
+    margin-bottom: .7rem;
+    font-size: 14px;
+    
+}
+
+.profile .right .ul.contact li i{
+    font-size: 18px;
+    margin-right: 0.3rem;
+    
+    
+}
+
+.profile .right ul.socials{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* list-style: none;
+    margin-bottom: 1.6rem; */
+}
+.profile .right ul.socials li a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--pure);
+    line-height: 36px;
+    text-align: center;   
+    margin-right: 0.8rem;
+}
+
+.profile .right ul.socials li:nth-child(1) a{
+    background: var(--secondary);
+}
+
+.profile .right ul.socials li:nth-child(2) a{
+    background: var(--ternary);
+}
+.profile .right ul.socials li:nth-child(3) a{
+    background: var(--dribble);
+}
