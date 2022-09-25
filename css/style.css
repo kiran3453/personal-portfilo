@@ -30,6 +30,7 @@ body{
     font-family: 'IBM Plex Sans', sans-sarif;
     background: var(--dark);
     --webkit-font-smoothing: antialiased;
+    
 }
 
 
@@ -41,6 +42,7 @@ h1,h2,h3,h4,h5,h6{
 .container{
     max-width: 1140px;
     margin: auto;
+    position: relative;
 }
 
 nav{
@@ -182,4 +184,94 @@ nav{
 }
 .profile .right ul.socials li:nth-child(3) a{
     background: var(--dribble);
+}
+
+
+.section_heading{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--pure);
+    margin-bottom: 3rem;
+    position: relative;
+    /* text-shadow: 0 0 1px rgba(40, 54, 95, 0.1); */
+}
+
+section{
+    padding: 3rem;
+}
+
+main{
+    background-color: var(--primay);
+ 
+}
+
+.section_heading:after {
+    content: '';
+    height: 3px;
+    width: 80px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 2px dotted var(--danger);
+}
+
+.about .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16rem;
+
+}
+.about .content h2{
+    color: blue;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+
+.about .content p{
+    color: var(--ternary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+}
+.about .content .left button{
+    background:rgba(77, 121, 246, 0.1) ;
+    color: var(--info);
+    padding: 4px 8px;
+    font-size: 12px;
+    border: none;
+    line-height: 14px;
+    outline: none;
+    cursor: pointer;
+}
+.about .content .right p{
+    line-height: 1.6;
+    font-size: 14px;
+    color: var(--ternary);
+    letter-spacing: 0.1px;
+    margin-bottom: 1rem;
+
+}
+
+.about .content .right p span:nth-child(1){
+    width: 135px;
+    float: left;
+    font-weight: 500;
+    padding-right: 10px;
+    display: block;
+    position: relative;
+}
+
+.about .content .right p span:nth-child(2){
+    padding-left: 150px;
+    display: block;
+}
+
+.about .content .right p span:nth-child(1):after{
+    content: ":";
+    position: absolute;
+    right: 0;
+    top: 0;
 }
