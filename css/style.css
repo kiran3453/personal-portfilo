@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6{
 
 .container{
     max-width: 1140px;
+    max-height: 15000px;
     margin: auto;
     position: relative;
 }
@@ -274,4 +275,102 @@ main{
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.skills .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.skills .content .left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills .content .left .heading{
+    margin-bottom: 2rem;
+
+}
+
+.skills .content .left .heading{
+    color: var(--fade);
+    font-size: 30px;
+}
+
+.skills .content .left .heading h5{
+    font-size: 16px;
+    margin-top: 0.5rem;
+    color: var(--mild);
+}
+.skills .content .left p{
+    font-size: 14px;
+    color: var(--ternary);
+    line-height: 1.7;
+}
+
+.skills .content .left p .center{
+    color: var(--fade);
+}
+
+.skills .content .left .item{
+    margin-bottom: 2.6rem;
+    margin-left: 15px;
+    position: relative;
+
+}
+
+.skills .content .left .item:after{
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0px;
+ width: 15px;
+ height: 15px;
+ border-radius: 50%;
+ border: 4px solid var(--info);
+ margin-left: -23.5px;
+ background: var(--primay);
+}
+.skills .content .left .timeline_wrapper{
+    border-left: 2px dotted var(--secondary);
+}
+
+
+.skills .skills_wrapper .skill-box h4{
+    color: var(--ternary);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.skills .skills_wrapper .skill-box{
+    margin-bottom: 4rem;
+}
+
+.skills .skills_wrapper .skill-box .progress-wrap{
+    background: #20294a;
+    height: 6px;
+    width: 100%;
+    box-shadow: 0px 0px 1px 0.25px #4d79f6;
+    border-radius: 10px;
+    border: 2px solid var(--primay);
+}
+
+.skills .skills_wrapper .skill-box .progress-wrap .progress_bar{
+    display: block;
+    height: 100%;
+    background: var(--info);
+    width: 0%;
+    position: relative;
+
+}
+
+.skills .skills_wrapper .skill-box .progress-wrap .progress_bar .tooltip{
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    margin-bottom: 10px;
+    color: var(--ternary);
 }
